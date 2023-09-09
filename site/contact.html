@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+         a{
+        color: crimson;
+        text-decoration: none;
+        border:1px solid black;
+        border-radius: 5px;
+        width:200%;
+        height: 200%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    
+    a:hover{
+        background-color:green;
+        color: white;
+        text-decoration: underline;
+    }
+    #image{
+        border-radius: 50%;
+        margin-left: 10px;;
+        margin-right: 50%;
+        width:250px ;
+        height: 250px;
+        margin-top: -25%;
+    
+    }
+    #image:hover{
+        width: 400px;
+        height: 400px;
+
+    }
+    
+    .tt{
+        margin-top: -10px;
+        font-size: 35px;
+        margin-left: 40%;
+        text-decoration: underline;
+    }
+    p{
+        background-color: rgba(165, 228, 233, 0.6);
+        text-decoration: underline;
+    }
+     .tab{
+        width: 800px;
+        height: 300px;
+    margin-right: 50%;
+    margin-top: 10px;
+    background-color: #ccc;
+   }
+   .DIV{
+            margin-top: -15%;
+            margin-left: 60%;
+            margin-right: 250px;
+            margin-bottom: 30%;
+            border-radius: 50%;
+        
+        }
+        .info{
+            margin-top: -52%;
+            margin-left: 84%;
+
+            margin-bottom: 30%;
+            
+        }
+        
+    .deco{
+        margin-top: -28%;
+        
+    }
+    input[type='checkbox']{
+        accent-color: black;
+    }
+    .tooltip{
+        width: 20px;
+        background-color: burlywood;
+    }
+  .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10 px 0px;
+
+  /* Position the tooltip */
+  position: absolute;
+  
+}
+button:hover{
+            color:white;
+            background-color: red;
+            width: 100px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    
+    </style>
+</head>
+<body>
+    <table align="right">
+        <tr>
+        <td><a href="home.html"> <i class="fa fa-home icon"></i> Home</a></td>
+        <td><a href="signUp.html"> <i class="fa fa-bell icon"></i> Sign Up</a></td>
+         <td><a href="Gallery.html"> <i class="fa fa-photo icon"></i>Gallery</a></td>
+                     <td><a href="about.html"> <i class="fa fa-file icon"></i> About us</a></td>
+                         <td><a href="Contact.html"> <i class="fa fa-phone icon"></i>Contact us</a>
+                        </td>
+        </tr>
+    </table><br><br>
+    <table class="tt">
+        <tr>
+    <td>We'd Love to Hear From You</td>
+</tr>
+</table>
+<p align="center">We would be happy to answer your questions.</p>
+    <div class="tab">
+        <table >
+            <tr>
+                <td>NAME</td>
+                <td style="border: 2px solid black;"><input type="text" name="userName" placeholder="NAME" autocomplete="off"></td>
+            <td rowspan="3"><img src="images/fav.jpg" width="200px" height="150px"></td>
+            </tr>
+            <tr>
+                <td>EMAIL</td>
+                <td style="border: 2px solid black;"><input type="email" name="userName" placeholder="EMAIL" autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td>MESSAGE</td>
+                <td style="border: 2px solid black;"><textarea type="text" name="info" cols="30" rows="5" autocomplete="off">Message</textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                <div class="tooltip" style="border: 2px solid black;"> <input type="checkbox"> 
+                    <span class="tooltiptext">send me a copied email</span>
+                  </div>
+                   </td>
+            </tr>
+            <br><br>
+            <tr>
+                <td>
+                    <button style="background-color: dimgray;">Submit</button>
+                </td>
+            </tr>
+        </table>
+</div>
+      <div class="DIV">
+        <img src="images/my.jpg" id="image">
+      </div>
+      <div class="info">
+ <strong><u>INFO></u></strong><br>
+    I'm a dedicated computer science student with a strong passion for learning and exploring new concepts.
+    I am an enthusiastic coder, always looking for opportunities to practice and improve your skills. 
+    Online resources, coding challenges, and personal projects are all part of your learning toolkit. 
+    I understand the value of both theoretical understanding and practical application in computer science. 
+      </div>
+      <div class="deco">
+    <img src="images/design1.jpg" id="I" width="100%" height="200px">
+</div>
+</body>
+</html>

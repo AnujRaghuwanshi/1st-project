@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <style type="text/css">
+       body{
+        margin-top: 5%;
+        background-image: url(images/nice2.jpg);
+       
+       
+       }
+        button{
+            background-color:rgb(82, 67, 67);
+            border-radius: 10px;
+            width: 40%;
+            
+        }
+        button:hover{
+            color:white;
+            background-color: red;
+        }
+      
+       
+        tr,td{
+           
+            padding: 6px;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0px 0px 2px brown;
+        }
+        hr{
+            margin-left: 42%;
+            margin-right: 42%;
+            border-bottom: 1px solid rgb(159, 162, 165);
+        }
+        input[type=checkbox]{
+            accent-color: black;
+        }
+        .a{
+        background-color: rgb(184, 196, 202);
+        }
+        .b{
+            background-color: darkgrey;
+        }
+        .DIV{
+            background-color: rgba(111,111,119,0.9);         
+             border: 2px solid black;
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 10px;
+            margin-bottom: -80px;
+            border-radius: 80px;
+            box-shadow: 5px 5px 5px brown;
+            background: linear-gradient(rgb(243, 109, 109),rgb(175, 175, 86),rgb(170, 170, 212),orange,rgb(54, 179, 54),rgb(132, 224, 224),purple);
+            opacity: 0.9;
+        }
+        img{
+            border-radius: 50%;
+        }
+        img:hover{
+            width: 300px;
+            height: 300px;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            border:1px solid black;
+            border-radius: 5px;
+            width:200%;
+            height: 200%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        
+        a:hover{
+            background-color:green;
+            color: white;
+            text-decoration: underline;
+        }
+        .shift{
+            margin-top: -50px;
+            background-color: black;
+            
+        }
+        .btn{
+            color:white;
+            border-radius: none;
+        }
+        ::placeholder{
+            box-shadow: 5px 4px 5px black;
+        }
+       input[type='text'],input[type='password'],input[type='email']{
+        
+        background-color: rgba(111,111,119,0.5);
+       }
+       input[type='text']:hover,input[type='password']:hover,input[type='email']:hover{
+        width: 300px;
+        height: 20px;
+       }
+       
+        marquee{
+            margin-left: 78%;
+        }
+        button:hover{
+            width: 100px;
+            height: 30px;
+
+        }
+      
+    </style>
+    
+</head>
+<body>
+    <table align="right" class="shift">
+        <tr>
+        <td ><a href="home.html"> <i class="fa fa-home icon"></i>Home</a></td>
+        <td ><a href="signUp.html">  <i class="fa fa-bell icon"></i> Sign Up</a></td>
+         <td><a href="Gallery.html"> <i class="fa fa-photo icon"></i>Gallery</a></td>
+                     <td id="E"><a href="about.html"> <i class="fa fa-file icon"></i> About us</a></td>
+                         <td><a href="Contact.html"><i class="fa fa-phone icon"></i> Contact us</a>
+                        </td>
+        </tr>
+    </table>
+    
+    <div class="DIV">
+   <form action="server.php" method="post" autocomplete="off">
+  <center>  <img src="images/sistec1.jpeg" width="150px" height="150px"><font style="color: black" size="6">Sign Up</font><br><font size="1">It's free and takes less than 30 seconds.</font>
+  </center><br><br>
+ 
+    <table align="center" >
+        <tr>
+            <center>
+            <input type="radio" name="status" value="Mr" id="1"><label for="1"></label>Mr.
+            <input type="radio" name="status" value="Mrs">Mrs.
+            <input type="radio" name="status" value="Ms">Ms.</center>
+            <hr>
+    </tr>
+        <tr class="a">
+            
+        <td >
+            <i class="fa fa-user icon"></i><input  class="input-field" type="text" placeholder="Your First Name" required>
+        </td>
+        
+    </tr>
+    <tr class="b">
+       
+        <td>
+            <i class="*fa fa-user icon"><input type="text" placeholder="Your Last Name" required></td>
+    </tr>
+    <tr class="a">
+         <td><i class="fa fa-envelope icon"></i> <input type="email" placeholder="Your Email" required></td>
+    </tr>
+    <tr class="b">
+        <td> <i class="fa fa-key icon"></i> <input type="password" placeholder="Password" required></td>
+    </tr>
+    <tr class="a">
+        <td><i class="fa fa-lock icon"></i> <input type="password" placeholder="Confirm Password" required></td>
+    </tr>
+    <tr class="b">
+        <td><i class="fa fa-phone icon"></i> <input type="text" placeholder="Contact +91" maxlength="10"></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" required><font size="2"> I agree to the <a href="condition.html" class="btn">Terms of use</a> </font></td>
+    </tr>
+    <tr>
+        <td>
+            <button>Submit</button>
+        </td>
+    </tr>
+    </table>
+   </form>
+</div>
+
+<marquee  style="color:white" direction="left" behavior="alternate" height="50px"><h3>Developed By :-Anuj Raghuwanshi</h3></marquee>
+</body>
+</html>
