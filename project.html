@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style type="text/css">
+        body{
+            background-image: url(images/nice1.jpg);
+        }
+
+        #main{
+            width: 80%;
+            height: 800px;
+            margin: auto;
+            border: 2px solid black;
+            background: linear-gradient(rgb(243, 109, 109),rgb(175, 175, 86),rgb(170, 170, 212),orange,rgb(54, 179, 54),rgb(132, 224, 224),purple);
+            opacity: 0.9;
+            border-radius: 12px;
+        }
+        #header{
+            height: 10%;
+            border: 1px solid red;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 10px;
+            font-size: 30px;
+            background-color: khaki;
+            border-radius: 20px;
+
+        }
+        #grade{
+            padding-top: 30px;
+            font-family: fantasy;
+            color: darkolivegreen;
+            text-decoration: underline;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            margin-left: 50px;
+            border-radius: 33%;
+            margin-top: -80px;
+            border: 2px solid black;
+        }
+        #content{
+         height: 300px;
+        
+
+        }
+        #left{
+            float: left;
+               width: 50%;
+               margin-left:2px;
+               margin-top: 10px;
+               height: 360px;
+               border: 3px solid black;
+
+        }
+        #right{
+            float: left;
+            width: 49%;
+            height: 280px;
+    
+        }
+        #footer{
+            width: 80%;
+            height: 200px;
+            
+        }
+        #my{
+            margin-top:20px;
+            margin-bottom: -10px;
+            border-radius: 50%;
+        
+        }
+        #logo:hover{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        }
+        h2{
+            margin-top: -60px;
+            margin-left: 100px;
+        }
+        button{
+            color:white;
+            background-color: black;
+            width: 100px;
+            height: 30px;
+            border-radius: 50%;
+            box-shadow: 5px solid brown;
+        }
+        button:hover{
+            background-color: red;
+        }
+       #name1{
+        color: red;
+       }
+       #res{
+        color: beige;
+       }
+       legend{
+        font-size: 25px;
+        font-family: fantasy;
+       }
+       table{
+        margin-left: 70px;
+       }
+       tr,td{
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       }
+    input[type='text'],input[type='number']{
+        border-radius: 10px;
+        border: 2px solid #e00d0d;
+        height: 20px;
+        font-size: 20px;
+    }
+    input[type='text']:hover,input[type='number']:hover{
+        background-color: darksalmon;
+    
+    }
+    .td{
+        text-decoration: underline red;
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h3 align="right"><span id="time"> </span></h3>
+        <div id="header">
+        <center><header id="grade">GRADING SYSTEM</header></center>
+            <img src="images/sistec1.jpeg" id="logo">
+        </div>
+<br><br><br><br><br><br><br>
+
+        <div id="content">
+            
+           <div id="left">
+            <table>
+                
+                <tr>
+            <td class="td">NAME</td>
+                </tr>
+                <tr>
+                <td><input type="text" placeholder="Enter name" id="name"></td>
+                </tr>
+                <tr>
+                    <td class="td">ROLL NO.</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Enter Roll no." id="roll"></td>
+                        </tr>
+              <tr>
+                <td class="td">Physics Marks</td>
+             </tr>
+               <tr>
+                <td><input type="number" id="no1"></td>
+             </tr>     
+             <tr>
+                <td class="td">Chemistry Marks</td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="no2"></td>
+                    </tr> 
+                    <tr>
+                        <td class="td">Mathematics Marks</td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" id="no3"></td>
+                            </tr> 
+                <tr>
+                    <td><button onclick="data()">Check Grade</button></td>
+                </tr>
+            </table>
+           </div>
+          
+           <div id="right">
+            <fieldset><legend>Grade will appear here</legend>
+        <h1 id="name1" style="margin-top: 0;"></h1><br><br>
+        <h2 id="name2" style="margin-left: 0;"></h2>
+        <h3 id="tot"></h3>
+        <h3 id="per"></h3>
+        <h3 id="res"></h3>
+        <h1 id="G"></h1>
+    </fieldset>
+ </div>
+       
+        </div>
+
+        <div id="footer">
+    <img src="images/my.jpg" width="200px" height="200px" id="my">
+    <h2>DEVELOPED BY:- ANUJ RAGHUWANSHI</h2>
+        </div>
+
+    </div>
+
+    <script>
+function refreshTime() {
+  const timeDisplay = document.getElementById("time");
+  const dateString = new Date().toLocaleString();
+  const formattedString = dateString.replace(", ", " - ");
+  timeDisplay.textContent = formattedString;
+}
+  setInterval(refreshTime, 1000);
+
+        function data(){
+         const x = document.getElementById("name").value;
+         document.getElementById("name1").innerHTML=x;
+
+         const y = document.getElementById("roll").value;
+         document.getElementById("name2").innerHTML=y;
+
+         const n1 =parseFloat(document.getElementById("no1").value);
+         const n2 = parseFloat(document.getElementById("no2").value);
+         const n3 =parseFloat(document.getElementById("no3").value);
+         if(isNaN(n1)||isNaN(n2)|| isNaN(n3)){
+            alert("FILL OUT PROPER DETAILS");
+            return;
+         }
+         const total=n1+n2+n3;
+         var percentage=total/3;
+         document.getElementById("tot").innerHTML="TOTAL = " +total;
+         document.getElementById("per").innerHTML="percentage = "+percentage.toFixed(2)+" %";
+       
+         if(total<99)
+         {
+            document.getElementById("res").innerHTML="RESULT = FAIL";
+         }
+         if(n1==0||n2==0||n3==0){
+            document.getElementById("res").innerHTML="RESULT = FAIL";
+         }
+         else{
+             document.getElementById("res").innerHTML="RESULT = PASS";
+         }
+
+        let grade="";
+        if(percentage>=95&&(n1!=0||n2!=0||n3!=0)){
+        grade="A+";
+        }
+        else if(percentage>80 && percentage<95){
+            grade= "A";
+        }
+         else if(percentage>70 && percentage<=80){
+            grade= "B+";
+        }
+         else if(percentage>60 && percentage<=70){
+            grade= "B";
+        }
+         else if(percentage>50 && percentage<=60){
+            grade= "C+";
+        }
+         else if(percentage>40 && percentage<=50){
+            grade= "C";
+        }
+         else if(percentage>=33 && percentage<=40){
+            grade= "D";
+        }
+    else{
+            grade="F";
+        }
+document.getElementById("G").innerHTML="GRADE = "+ grade
+        }
+        const date = new Date();
+
+
+    </script>
+</body>
+</html>
