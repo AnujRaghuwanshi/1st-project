@@ -1,2 +1,2 @@
-# 1st-project
+# WEB-project
 This is my first Git repository.
